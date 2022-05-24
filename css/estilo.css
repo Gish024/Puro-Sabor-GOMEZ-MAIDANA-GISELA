@@ -38,16 +38,17 @@ nav {
   font-family: "Lora", serif;
   max-width: 100%;
   align-items: flex-end;
-  border-bottom: 3px solid rgb(68, 67, 67);
+  border-bottom: 4px solid rgb(68, 67, 67);
   display: flex;
   position: relative;
+  height: 160px;
 }
 nav img {
   height: 70px;
   width: 70px;
   margin-left: 20px;
   margin-bottom: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
   animation-name: rotar_logo;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
@@ -66,30 +67,28 @@ nav img {
   }
 }
 nav h1 {
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 2em;
+  font-weight: 500;
   line-height: 3;
-  text-shadow: 3px 3px 8px rgb(78, 77, 2), 3px 3px 8px rgb(78, 77, 2), 3px 3px 8px rgb(78, 77, 2);
-  margin-right: 13px;
+  text-shadow: 8px 8px 10px rgb(78, 77, 2), 3px 3px 8px rgb(78, 77, 2), 3px 3px 8px rgb(78, 77, 2);
+  margin-right: 8px;
   text-transform: uppercase;
-  padding: 5px;
+  padding: 3px;
   /*Declaracion de variable Local*/
   color: black;
 }
 nav h2 {
   color: black;
   margin-top: 50px;
-  font-size: 0.8em;
+  font-size: 1em;
   text-shadow: 2px 2px 7px rgb(46, 43, 43), 2px 2px 7px rgb(46, 43, 43);
-  margin-bottom: 25px;
-  margin-right: 1px;
+  margin-right: 5px;
 }
 nav ul {
   display: flex;
   justify-content: space-around;
-  margin-top: 80px;
-  margin-bottom: 5px;
-  padding-right: 10px;
+  margin-top: 110px;  
+  padding-right: 8px;
   padding-left: 3px;
 }
 nav ul li {
@@ -99,30 +98,30 @@ nav ul li:hover {
   color: rgb(74, 245, 7);
 }
 nav ul li a {
-  color: rgb(145, 92, 243);
+  color: rgb(243, 241, 247);
   text-decoration: none;
   font-size: 17px;
   cursor: pointer;
-  padding: 10px;
+  padding: 8px;
 }
 nav ul li a:hover {
-  color: rgb(73, 158, 16);
+  color: rgb(124, 247, 54);
 }
 nav ul li a:active {  
   color: rgb(156, 236, 8);
 }
 nav ul li i {
-  color: rgba(247, 247, 240, 0.979);
+  color: rgba(248, 244, 14, 0.979);
 }
 nav ul li i:hover {
-  color: rgb(161, 243, 128);
+  color: rgb(116, 211, 7);
 }
 nav .menu-bar {
   display: none;
 }
 nav .shop {
-  margin-left: 60px;
-  margin-bottom: 50px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /*Nesting Pagina Inicio*/
@@ -282,8 +281,11 @@ footer .redes-sociales p {
 /*Estilo contenido Pagina Nosotros*/
 
 .jumbotron {
-  background-image: linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
-  height: 175vw;
+  background-color:rgb(255, 244, 228);
+  height: 173vw;
+}
+.jumbotron .container {
+  background-color:rgb(255, 244, 228);
 }
 .jumbotron .container h1 {
   color: rgb(17, 116, 102);
@@ -738,12 +740,12 @@ footer .redes-sociales p {
 .recetas .primera .indicaciones img {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
   position: absolute;
   box-shadow: 10px 10px 20px 0 rgb(51, 51, 48), 10px 10px 20px 0 rgb(51, 51, 48);
   bottom: 10px;
   left: 90px;
-  top: 870px;
+  top: 890px;
 }
 .recetas .segunda {
   display: flex;
@@ -933,21 +935,40 @@ footer .redes-sociales p {
 
 /*Extra small devices (portrait phones, less than 576px)*/
 
-@media screen and (max-width: 576px) {
+@media (min-width: 400px) and (max-width: 575.98px) {
 
   /*Header y Navegacion*/
   nav {
     position: relative;
+    height: 180px;
+  }
+  nav img {
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+  }
+  nav h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-right: 50px;
+    padding: 1px;
+  }
+  nav h2 {
+    margin-top: 1px;
+    font-size: 0.9em;
+    margin-right: 1px;
+    margin-left: 10px;
   }
   nav .shop {
     display: none;
   }
   nav .menu-bar {
     display: block;        
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     margin-bottom: 25px;
-    margin-left: 40px;
+    margin-right: 30px;
   }
   nav ul {
     display: none;
@@ -959,7 +980,7 @@ footer .redes-sociales p {
   /*Footer*/
 
   footer {
-    height: 120px;
+    height: 110px;
   }
   footer h4 {
     font-size: 15px;
@@ -972,19 +993,16 @@ footer .redes-sociales p {
     flex-direction: row; 
     flex-wrap: wrap; 
     justify-content: space-around; 
-    margin-left: 20px;
+    margin-left: 10px;
   }
   footer .redes-sociales img{
     margin-top: 10px;             
   }
   footer .redes-sociales a {
-    margin-top: 10px;
-    margin-left: 2px;        
-    font-size: 14px;
+    display: none;
   }
   footer .redes-sociales p {        
-    font-size: 14px;
-    margin-top: 10px;
+    display: none;
   }
 
   /*Extra small devices (portrait phones, less than 576px) para contenido Pagina Inicio*/
@@ -999,17 +1017,18 @@ footer .redes-sociales p {
     height: 180vw; 
   }
   section h2 {
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
   }
   section .presentacion {
     width: 90%;
-    height: 650px;
+    height: 600px;
     flex-direction: column;
   }
   section .presentacion img {
     width: 70%;
-    height: 290px;
-    margin-left: 70px;        
+    height: 250px;
+    margin-left: 50px;        
   }
   section .exposicion h3 {
     font-size: 18px;
@@ -1037,38 +1056,39 @@ footer .redes-sociales p {
   /*Extra small devices (portrait phones, less than 576px) para contenido Pagina Nosotros*/
 
   .jumbotron {
-    height: 700vw;
+    height: 1170vw;
   }
   .jumbotron .container h1 {
-    margin-left: 130px;
+    margin-left: 100px;
+    font-size: 20px;
+    padding-top: 30px;
   }
   .jumbotron .container img {
-    margin-left: 20px;
-    width: 450px;
-    height: 350px;
-  }
-  .jumbotron .container p {
     margin-left: 5px;
-    width: 100%;    
-  }
+    width: 350px;
+    height: 320px;    
+  }  
   .jumbotron .container1 h2 {
-    margin-left: 140px;
+    margin-left: 110px;
+    font-size: 20px;
   }
-  .jumbotron .container1 p {
-    margin-left: 5px;
+  .jumbotron .container1 p {    
     text-align: justify;
+    margin-left: 15px;
+    width: 90%;
   }
   .jumbotron .container2 {
     width: 95%;
-    margin-left: 15px;
+    margin: 5px;
   }
   .jumbotron .container2 .row h3 {
-    margin-left: 180px;
+    margin-left: 150px;
+    font-size: 20px;
   }
   .jumbotron .container2 img {
-    width: 380px;
-    height: 280px;
-    margin-left: 65px;
+    width: 370px;
+    height: 260px;
+    margin-left: 5px;
   }
   .jumbotron .container2 .row p {
     font-size: 15px;
@@ -1077,186 +1097,198 @@ footer .redes-sociales p {
   /*Extra small devices (portrait phones, less than 576px) para contenido Pagina Productos*/
 
   .mercaderia { 
-    height: 580vw;  
+    height: 860vw;  
     flex-direction: column;
   }
   .mercaderia h2 {    
-    margin-left: 220px;
+    margin-left: 120px;
+    font-size: 20px;
   }
   .mercaderia .medallones {
-    width: 85%;
-    height: 550px; 
+    width: 95%;
+    height: 590px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 45px;
+    margin-left: -5px;
     font-size: 20px;
+    padding-left: 10px;
   }
   .mercaderia .medallones ul li {
     font-size: 15px;
+    margin-left: -60px;
+  }
+  .mercaderia .medallones ul p {
+    font-size: 17px;
+    margin-left: -50px;
   }
   .mercaderia .medallones img {
-    width: 300px;  
+    width: 250px;  
     height: 250px;        
     flex-direction: column;
-    top: 270px;
-    left: 95px;
+    top: 280px;
+    left: 45px;
   }
   .mercaderia .pizza {
-    width: 85%;
-    height: 550px; 
+    width: 95%;
+    height: 560px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 45px;
+    margin-left: -5px;
     font-size: 20px;
+    padding-left: 10px;
   }
   .mercaderia .pizza ul {
     font-size: 15px;
+    left: 30px;
     top: 80px;
-    left: 90px;
   }
   .mercaderia .pizza ul p {
-    font-size: 18px;
+    font-size: 17px;
+    left: 40px;
   }
   .mercaderia .pizza img {
-    width: 300px;  
+    width: 250px;  
     height: 250px;        
     flex-direction: column;
-    top: 235px;
-    left: 95px;
+    top: 250px;
+    left: 45px;
   }
   .mercaderia .canelones {
-    width: 85%;
-    height: 500px; 
+    width: 95%;
+    height: 540px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 45px;
+    margin-left: -5px;
     font-size: 20px;
+    padding-left: 10px;
   }
-  .mercaderia .canelones ul {
+  .mercaderia .canelones ul li {
     font-size: 15px;
-    top: 80px;
-    left: 90px;
+    margin-left: -110px;
   }
   .mercaderia .canelones ul p {
-    font-size: 18px;
+    font-size: 17px;
+    margin-left: -90px;
   }
   .mercaderia .canelones img {
-    width: 300px;  
+    width: 250px;  
     height: 250px;        
     flex-direction: column;
-    top: 205px;
-    left: 95px;
+    top: 210px;
+    left: 45px;
   }
   .mercaderia .albondigas {
-    width: 85%;
-    height: 500px; 
+    width: 95%;
+    height: 540px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 45px;
+    margin-left: -5px;
     font-size: 20px;
+    padding-left: 10px;
   }
   .mercaderia .albondigas ul {
     font-size: 15px;
+    left: 30px;
     top: 80px;
-    left: 90px;
   }
   .mercaderia .albondigas ul p {
-    font-size: 18px;
+    font-size: 17px;
+    left: 40px;
   }
   .mercaderia .albondigas img {
-    width: 300px;  
+    width: 250px;  
     height: 250px;        
     flex-direction: column;
-    top: 205px;
-    left: 95px;
+    top: 210px;
+    left: 45px;
   }
   .mercaderia .tartas {
-    width: 85%;
-    height: 500px; 
+    width: 95%;
+    height: 530px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 45px;
+    margin-left: -5px;
     font-size: 20px;
+    padding-left: 10px;
   }
   .mercaderia .tartas ul {
     font-size: 15px;
-    top: 80px;
-    left: 90px;
+    margin-left: -110px;
   }
   .mercaderia .tartas ul p {
-    font-size: 18px;    
+    font-size: 16px;
+    margin-left: -40px;   
   }
   .mercaderia .tartas img {
-    width: 300px;  
+    width: 250px;  
     height: 250px;        
     flex-direction: column;
-    top: 205px;
-    left: 95px;
+    top: 225px;
+    left: 45px;
   }
   .mercaderia .panqueques {
-    width: 85%;
-    height: 500px; 
+    width: 95%;
+    height: 450px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 45px;
+    margin-left: -5px;
     font-size: 20px;
+    padding-left: 10px;
   }
   .mercaderia .panqueques ul {
     font-size: 15px;
+    left: 30px;
     top: 80px;
-    left: 160px;
-  }
-  .mercaderia .panqueques ul p {
-    font-size: 18px;
   }
   .mercaderia .panqueques img {
-    width: 300px;  
+    width: 250px;  
     height: 250px;        
     flex-direction: column;
-    top: 190px;
-    left: 95px;
+    top: 155px;
+    left: 45px;
   }
 
   /*Extra small devices (portrait phones, less than 576px) para contenido Pagina Recetas*/
 
   .recetas {                      
-    height: 430vw;        
+    height: 630vw;        
   }
   .recetas h2 {        
     font-size: 20px;
-    grid-column: 2/7;
-    margin-left: 50px;
+    grid-column: 1/8;
+    margin-left: 45px;
   }
   .recetas p {
-    font-size: 15px;        
+    font-size: 15px;
+    margin-left: 20px;        
   }
   .recetas video { 
-    grid-column: 2/7;
+    grid-column: 1/8;
     grid-row: 2;  
-    height: 270px;
-    margin-left: 40px;
+    height: 300px;
+    margin-left: 20px;
     margin-top: -150px;
   }
   .recetas .primera {
     grid-column: 1/8;
     grid-row: 3/5;       
     flex-direction: column;
-    width: 90%;
-    height: 290px; 
-    margin-left: 80px;
-    padding-left: 20px;
+    width: 98%;
+    height: 300px; 
+    margin-left: 20px;
+    padding-left: 5px;
     margin-top: -80px;                        
   }
   .recetas .primera h3 {
     font-size: 18px;
-    top: -80px;
-    left: 50px;
+    top: -70px;
+    left: 30px;
   }
   .recetas .primera .estofado {
     font-size: 15px;
     top: 2px;
     padding-right: 30px;
-    left: 60px;
+    left: 20px;
   }
   .recetas .primera .estofado .titular {
     font-size: 15px;
@@ -1266,30 +1298,31 @@ footer .redes-sociales p {
     top: 320px;    
   }  
   .recetas .primera .indicaciones {
-    margin-top: -465px;
+    margin-top: -475px;
   }
   .recetas .primera .indicaciones ol li {
-  font-size: 15px;        
+  font-size: 15px;
+  margin-left: -25px;        
   }
   .recetas .primera .indicaciones img {
     width: 65%;
-    top: 810px; 
+    top: 870px; 
     left: 50px;       
   }
   .recetas .segunda {
     grid-column: 1/8;
     grid-row: 6/8; 
     flex-direction: column;
-    width: 90%;
-    height: 270px; 
-    margin-left: 80px;
-    margin-top: 50px;
-    padding-left: 30px;
+    width: 98%;
+    height: 300px; 
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-top: -20px; 
   }
   .recetas .segunda h3 {
     font-size: 18px;
-    top: -60px;
-    left: 60px;
+    top: -30px;
+    left: 10px;
   }
   .recetas .segunda .pizza {
     font-size: 15px;
@@ -1304,31 +1337,36 @@ footer .redes-sociales p {
     top: 310px;
   }
   .recetas .segunda .pasos {
-    margin-top: -455px;
+    margin-top: -495px;
   }
   .recetas .segunda .pasos ol {
-    font-size: 15px;        
+    font-size: 15px;
+    margin-left: -25px;       
   }
   .recetas .segunda .pasos img {
     width: 75%;
-    top: 770px;
+    top: 870px;
     left: 50px;
   }
 
   /*Extra small devices (portrait phones, less than 576px) para contenido Pagina Contacto*/
 
   .medios {    
-    height: 110vw;
+    height: 170vw;
   }
   .medios h2 {        
-    grid-column: 2/4;
-    margin-left: 80px; 
+    grid-column: 1/8;
+    margin-left: 120px;
+    font-size: 20px; 
   }
   .medios .flex-container {        
-    grid-column: 1/5;
+    grid-column: 1/8;
     grid-row: 2/7;
-    margin-left: 65px;
-    height: 400px;
+    margin-left: 20px;
+    height: 450px;
+    margin: 10px;
+    width: 350px; 
+    padding: 20px;
   }
   .medios .flex-container .form {
     min-width: 450px;  
@@ -1340,10 +1378,262 @@ footer .redes-sociales p {
     margin: 5px 0;
   }
   .medios h3 {
-    font-size: 18px;
-    grid-column: 1/4;
+    font-size: 17px;
+    grid-column: 1/8;
     text-align: center;        
-    margin-top: -40px;  
+    margin-top: -40px;
+    margin-left: 20px;  
+  }
+}
+
+/*Extra small devices (portrait phones, less than 450px)*/
+
+@media (min-width: 450px) and (max-width: 575.98px) {
+
+  /*Extra small devices (portrait phones, less than 450px) para contenido Pagina Nosotros*/
+  .jumbotron {
+    height: 950vw;
+  }
+  .jumbotron .container {
+    margin-top: -10px;
+  }
+  .jumbotron .container h1 {
+    margin-left: 120px;
+    font-size: 20px;
+    padding-top: 30px;    
+  }
+  .jumbotron .container img {
+    margin-left: 30px;    
+  }
+  .jumbotron .container1 h2 {
+    margin-left: 150px;    
+  }
+  .jumbotron .container1 p {    
+    text-align: justify;
+    margin-left: 10px;
+    width: 95%;
+  }
+  .jumbotron .container2 .row h3 {
+    margin-left: 180px;    
+  }
+  .jumbotron .container2 img {    
+    margin-left: 25px;
+  }
+  .jumbotron .container2 .row p {
+    font-size: 15px;
+    margin: 10px;
+  }
+  /*Extra small devices (portrait phones, less than 450px) para contenido Pagina Productos*/
+  .mercaderia { 
+    height: 760vw;
+  }
+  .mercaderia h2 {
+    margin-left: 150px;
+  } 
+
+  /*Extra small devices (portrait phones, less than 450px) para contenido Pagina Recetas*/
+  .recetas {                      
+    height: 570vw;        
+  }
+
+  /*Extra small devices (portrait phones, less than 450px) para contenido Pagina Contacto*/
+
+  .medios {    
+    height: 150vw;
+  }
+  .medios h2 {     
+    margin-left: 160px;    
+  }
+  .medios .flex-container {       
+    margin-left: 45px;    
+  }
+}
+
+/*Extra small devices (portrait phones, less than 500px)*/
+
+@media (min-width: 500px) and (max-width: 575.98px) {
+
+  /*Extra small devices (portrait phones, less than 500px) para contenido Pagina Nosotros*/
+  .jumbotron {
+    height: 815vw;
+  }
+  .jumbotron .container {
+    margin-top: -10px;
+  }
+  .jumbotron .container h1 {
+    margin-left: 140px;
+  }    
+  .jumbotron .container img {
+    margin-left: 55px;    
+  }
+  .jumbotron .container1 p {    
+    margin-left: 20px;
+    margin-right: 20px;    
+  }
+  .jumbotron .container2 img {    
+    margin-left: 50px;
+  }
+  .jumbotron .container2 .row p {
+    font-size: 15px;
+    margin: 15px;
+  }
+
+  /*Extra small devices (portrait phones, less than 500px) para contenido Pagina Productos*/
+  .mercaderia { 
+    height: 700vw;
+  }
+  .mercaderia h2 {
+    margin-left: 190px;
+  }
+  .mercaderia .medallones img{    
+    margin-left: 50px;
+  }
+  .mercaderia .pizza img{    
+    margin-left: 50px;
+  }
+  .mercaderia .canelones img{    
+    margin-left: 50px;
+  }
+  .mercaderia .albondigas img{    
+    margin-left: 50px;
+  }
+  .mercaderia .tartas img{    
+    margin-left: 50px;
+  }
+  .mercaderia .panqueques img{    
+    margin-left: 50px;
+  }
+
+  /*Extra small devices (portrait phones, less than 500px) para contenido Pagina Recetas*/
+  .recetas {                      
+    height: 500vw;        
+  }
+  .recetas h2 {     
+    margin-left: 95px;
+  }  
+  .recetas .primera .indicaciones img {
+    top: 820px; 
+    left: 70px;       
+  }  
+  .recetas .segunda .pasos img {
+    top: 820px;
+    left: 70px;
+  }
+  
+  /*Extra small devices (portrait phones, less than 500px) para contenido Pagina Contacto*/
+
+  .medios {    
+    height: 130vw;
+  }
+  .medios h2 {     
+    margin-left: 190px;    
+  }
+  .medios .flex-container {       
+    margin-left: 80px;    
+  }
+  .medios h3 {
+    margin-left: 40px; 
+    margin-top: -20px;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 540px)*/
+
+@media (min-width: 540px) and (max-width: 575.98px) {
+
+  /*Extra small devices (portrait phones, less than 540px) para Header y Navegacion*/
+
+  nav {    
+    height: 120px;
+  }
+  nav img {
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+  }
+  nav h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-right: 5px;
+    padding: 1px;
+  }
+  nav h2 {
+    margin-top: 1px;
+    font-size: 0.9em;
+    margin-right: 1px;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  nav .menu-bar {    
+    margin-top: -5px;
+    margin-right: 10px;
+  }
+  
+  /*Extra small devices (portrait phones, less than 540px) para contenido Pagina Inicio*/
+  section .presentacion img {    
+    margin-left: 70px;        
+  }
+
+  /*Extra small devices (portrait phones, less than 540px) para contenido Pagina Nosotros*/
+  .jumbotron {
+    height: 730vw;
+  }
+  /*Extra small devices (portrait phones, less than 540px) para contenido Pagina Productos*/
+  .mercaderia { 
+    height: 650vw;
+  }
+  .mercaderia h2 {
+    margin-left: 220px;
+  }
+  .mercaderia .medallones img{    
+    margin-left: 60px;
+  }
+  .mercaderia .pizza img{    
+    margin-left: 60px;
+  }
+  .mercaderia .canelones img{    
+    margin-left: 60px;
+  }
+  .mercaderia .albondigas img{    
+    margin-left: 60px;
+  }
+  .mercaderia .tartas img{    
+    margin-left: 60px;
+  }
+  .mercaderia .panqueques img{    
+    margin-left: 60px;
+  }
+
+  /*Extra small devices (portrait phones, less than 500px) para contenido Pagina Recetas*/
+  .recetas {                      
+    height: 470vw;        
+  }
+  .recetas h2 {     
+    margin-left: 120px;
+  }  
+  .recetas .primera .indicaciones img {
+    top: 800px; 
+    left: 80px;       
+  }  
+  .recetas .segunda .pasos img {
+    top: 800px;
+    left: 80px;
+  }
+  /*Extra small devices (portrait phones, less than 540px) para contenido Pagina Contacto*/
+
+  .medios {    
+    height: 130vw;
+  }
+  .medios h2 {     
+    margin-left: 190px; 
+    margin-bottom: 20px;   
+  }
+  .medios .flex-container {       
+    margin-left: 90px;    
+  }
+  .medios h3 {
+    margin-left: 60px;    
   }
 }
 
@@ -1354,16 +1644,23 @@ footer .redes-sociales p {
 /*Header y Navegacion*/
   nav {
     position: relative;
+    height: 150px;
+  }
+  nav img {
+    margin-left: 5px;
+  }
+  nav h1 {
+    font-size: 1.5em;
   }
   nav .shop {
     display: none;
   }
   nav .menu-bar {
     display: block;        
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     margin-bottom: 25px;
-    margin-left: 40px;
+    margin-right: 10px;
   }
   nav ul {
     display: none;
@@ -1419,18 +1716,18 @@ footer .redes-sociales p {
   }
   section .presentacion {
     width: 85%;
-    height: 700px;
+    height: 690px;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 40px;
   }
   section .presentacion img {
     width: 70%;
-    height: 320px;
-    margin-left: 90px;        
+    height: 300px;
+    margin-left: 70px;        
   }
   section .exposicion h3 {
     font-size: 18px;
-    left: 100px;
+    left: 40px;
   }
   section .exposicion p {
     font-size: 15px;           
@@ -1454,38 +1751,39 @@ footer .redes-sociales p {
   /*Small devices (landscape phones, 576px and up) para contenido Pagina Nosotros*/
 
   .jumbotron {
-    height: 520vw;
+    height: 690vw;
   }
   .jumbotron .container h1 {
-    margin-left: 130px;
+    margin-left: 140px;
   }
   .jumbotron .container img {
-    margin-left: 20px;
+    margin-left: 10px;
     width: 500px;
     height: 380px;
   }
   .jumbotron .container p {
-    margin-left: -60px;
-    width: 600px;    
+    margin-left: 5px;
+    width: 500px;    
   }
   .jumbotron .container1 h2 {
-    margin-left: 240px;
+    margin-left: 140px;
   }
   .jumbotron .container1 p {
-    margin-left: 5px;
+    margin-left: 20px;
     text-align: justify;
+    width: 500px;  
   }
   .jumbotron .container2 {
     width: 95%;
     margin-left: 15px;
   }
   .jumbotron .container2 .row h3 {
-    margin-left: 260px;
+    margin-left: 220px;
   }
   .jumbotron .container2 img {
     width: 420px;
     height: 300px;
-    margin-left: 120px;
+    margin-left: 60px;
   }
   .jumbotron .container2 .row p {
     font-size: 15px;
@@ -1496,11 +1794,11 @@ footer .redes-sociales p {
   /*Small devices (landscape phones, 576px and up) para contenido Pagina Productos*/
 
   .mercaderia { 
-    height: 450vw;  
+    height: 580vw;  
     flex-direction: column;
   }
   .mercaderia h2 {    
-    margin-left: 320px;
+    margin-left: 210px;
   }
   .mercaderia .medallones {
     width: 85%;
@@ -1518,7 +1816,7 @@ footer .redes-sociales p {
     height: 250px;        
     flex-direction: column;
     top: 270px;
-    left: 160px;
+    left: 90px;
   }
   .mercaderia .pizza {
     width: 85%;
@@ -1541,7 +1839,7 @@ footer .redes-sociales p {
     height: 250px;        
     flex-direction: column;
     top: 235px;
-    left: 160px;
+    left: 90px;
   }
   .mercaderia .canelones {
     width: 85%;
@@ -1564,7 +1862,7 @@ footer .redes-sociales p {
     height: 250px;        
     flex-direction: column;
     top: 205px;
-    left: 160px;
+    left: 90px;
   }
   .mercaderia .albondigas {
     width: 85%;
@@ -1587,7 +1885,7 @@ footer .redes-sociales p {
     height: 250px;        
     flex-direction: column;
     top: 205px;
-    left: 160px;
+    left: 90px;
   }
   .mercaderia .tartas {
     width: 85%;
@@ -1603,14 +1901,15 @@ footer .redes-sociales p {
     left: 90px;
   }
   .mercaderia .tartas ul p {
-    font-size: 18px;    
+    font-size: 18px;
+    margin-left: -15px;   
   }
   .mercaderia .tartas img {
     width: 300px;  
     height: 250px;        
     flex-direction: column;
     top: 205px;
-    left: 160px;
+    left: 90px;
   }
   .mercaderia .panqueques {
     width: 85%;
@@ -1626,26 +1925,26 @@ footer .redes-sociales p {
     left: 160px;
   }
   .mercaderia .panqueques ul p {
-    font-size: 18px;
+    font-size: 18px;   
   }
   .mercaderia .panqueques img {
     width: 300px;  
     height: 250px;        
     flex-direction: column;
     top: 190px;
-    left: 160px;
+    left: 90px;
   }
 
   /*Small devices (landscape phones, 576px and up) para contenido Pagina Recetas*/
 
   .recetas {                      
-    height: 340vw;        
+    height: 420vw;        
   }
   .recetas h2 {        
     font-size: 20px;
-    grid-column: 2/7;
-    margin-left: 150px;
-    margin-top: 30px;
+    grid-column: 1/8;
+    margin-left: 140px;
+    margin-top: 25px;
   }
   .recetas p {
     font-size: 15px; 
@@ -1656,7 +1955,7 @@ footer .redes-sociales p {
     grid-row: 2;  
     height: 270px;
     margin-left: 45px;
-    margin-top: -150px;
+    margin-top: -130px;
   }
   .recetas .primera {
     grid-column: 1/8;
@@ -1664,20 +1963,20 @@ footer .redes-sociales p {
     flex-direction: column;
     width: 90%;
     height: 290px; 
-    margin-left: 80px;
-    padding-left: 40px;
+    margin-left: 50px;
+    padding-left: 10px;
     margin-top: -80px;                        
   }
   .recetas .primera h3 {
     font-size: 18px;
-    top: -80px;
-    left: 100px;
+    top: -50px;
+    left: 40px;
   }
   .recetas .primera .estofado {
     font-size: 15px;
     top: 2px;
     padding-right: 40px;
-    left: 150px;
+    left: 80px;
   }
   .recetas .primera .estofado .titular {
     font-size: 15px;
@@ -1694,7 +1993,7 @@ footer .redes-sociales p {
   }
   .recetas .primera .indicaciones img {
     width: 65%;
-    top: 750px; 
+    top: 810px; 
     left: 70px;       
   }
   .recetas .segunda {
@@ -1702,15 +2001,15 @@ footer .redes-sociales p {
     grid-row: 6/8; 
     flex-direction: column;
     width: 90%;
-    height: 270px; 
-    margin-left: 80px;
-    margin-top: -10px;
-    padding-left: 30px;
+    height: 290px; 
+    margin-left: 50px;
+    padding-left: 10px;
+    margin-top: 30px;  
   }
   .recetas .segunda h3 {
     font-size: 18px;
-    top: -60px;
-    left: 150px;
+    top: -40px;
+    left: 40px;
   }
   .recetas .segunda .pizza {
     font-size: 15px;
@@ -1726,7 +2025,7 @@ footer .redes-sociales p {
     top: 310px;
   }
   .recetas .segunda .pasos {
-    margin-top: -455px;
+    top: -255px;
   }
   .recetas .segunda .pasos ol {
     font-size: 15px;        
@@ -1740,16 +2039,16 @@ footer .redes-sociales p {
   /*Small devices (landscape phones, 576px and up) para contenido Pagina Contacto*/
 
   .medios {    
-    height: 90vw;
+    height: 120vw;
   }
   .medios h2 {        
     grid-column: 2/7;
-    margin-left: 220px; 
+    margin-left: 170px; 
   }
   .medios .flex-container {        
     grid-column: 2/7;
     grid-row: 2/7;
-    margin-left: 90px;
+    margin-left: 40px;
     height: 400px;
   }
   .medios .flex-container .form {
@@ -1757,7 +2056,7 @@ footer .redes-sociales p {
     padding: 20px;
   }
   .medios .flex-container .form .form-input {
-    width: 60%;
+    width: 70%;
     padding: 5px;
     margin: 5px 0;
   }
@@ -1765,7 +2064,160 @@ footer .redes-sociales p {
     font-size: 18px;
     grid-column: 2/7;
     text-align: center;        
-    margin-top: -40px;  
+    margin-top: -40px;
+    margin-left: 50px;  
+  }
+}
+
+/*Small devices (landscape phones, 600px and up)*/
+@media (min-width: 600px) and (max-width: 767.98px) {
+
+/*Small devices (landscape phones, 600px and up) para contenido Pagina Nosotros*/
+  .jumbotron {
+    height: 660vw;
+  }
+
+  /*Small devices (landscape phones, 600px and up) para contenido Pagina Productos*/
+  .mercaderia { 
+    height: 560vw; 
+  }
+}
+
+/*Small devices (landscape phones, 650px and up)*/
+@media (min-width: 650px) and (max-width: 767.98px) {
+
+  /*Small devices (landscape phones, 650px and up) para contenido Pagina Inicio*/
+  section .presentacion {    
+    margin-left: 60px;
+  }
+  section .presentacion img {
+    width: 70%;
+    height: 300px;
+    margin-left: 90px;        
+  }
+  section .exposicion h3 {    
+    left: 80px;
+  }
+  /*Small devices (landscape phones, 650px and up) para contenido Pagina Nosotros*/
+  .jumbotron {
+    height: 595vw;
+  }
+  .jumbotron .container1 h2 {
+    margin-left: 190px;
+  }
+  .jumbotron .container1 p {
+    margin-left: 50px;
+    text-align: justify;
+    width: 500px;  
+  }
+  .jumbotron .container2 {
+    width: 95%;
+    margin-left: 20px;
+  }
+  .jumbotron .container2 .row h3 {
+    margin-left: 220px;
+  }
+  .jumbotron .container2 img {
+    width: 420px;
+    height: 300px;
+    margin-left: 90px;
+  }
+  /*Small devices (landscape phones, 650px and up) para contenido Pagina Productos*/
+  .mercaderia { 
+    height: 515vw; 
+  }
+  .mercaderia h2 {
+    margin-left: 250px;
+  }
+  /*Small devices (landscape phones, 650px and up) para contenido Pagina Contacto*/
+  .medios {    
+    height: 100vw;
+  }
+}
+
+/*Small devices (landscape phones, 700px and up)*/
+@media (min-width: 700px) and (max-width: 767.98px) {
+
+  /*Small devices (landscape phones, 700px and up) para contenido Pagina Nosotros*/
+  .jumbotron {
+    height: 530vw;
+  }
+  .jumbotron .container p {
+    margin-left: -20px;
+    width: 580px;    
+  }
+  .jumbotron .container1 h2 {
+    margin-left: 220px;
+  }
+  .jumbotron .container1 p {
+    margin-left: 50px;
+    text-align: justify;
+    width: 580px;  
+  }
+  .jumbotron .container2 {
+    width: 95%;
+    margin-left: 20px;
+  }
+  .jumbotron .container2 .row h3 {
+    margin-left: 240px;
+  }
+  .jumbotron .container2 img {    
+    margin-left: 110px;
+  }
+
+  /*Small devices (landscape phones, 700px and up) para contenido Pagina Productos*/
+  .mercaderia { 
+    height: 480vw; 
+  }
+}
+
+/*Small devices (landscape phones, 750px and up)*/
+@media (min-width: 750px) and (max-width: 767.98px) {
+
+  /*Small devices (landscape phones, 750px and up) para contenido Pagina Nosotros*/
+  .jumbotron {
+    height: 490vw;
+  }
+  .jumbotron .container1 h2 {
+    margin-left: 250px;
+  }
+  .jumbotron .container1 p {
+    margin-left: 80px;
+  }
+  /*Small devices (landscape phones, 750px and up) para contenido Pagina Productos*/
+  .mercaderia { 
+    height: 450vw; 
+  }
+  .mercaderia h2 {
+    margin-left: 300px;
+  }
+  .mercaderia .medallones img{    
+    margin-left: 70px;
+  }
+  .mercaderia .pizza img{    
+    margin-left: 70px;
+  }
+  .mercaderia .canelones img{    
+    margin-left: 70px;
+  }
+  .mercaderia .albondigas img{    
+    margin-left: 70px;
+  }
+  .mercaderia .tartas img{    
+    margin-left: 70px;
+  }
+  .mercaderia .panqueques img{    
+    margin-left: 70px;
+  }
+  /*Small devices (landscape phones, 750px and up) para contenido Pagina Contacto*/
+  .medios {    
+    height: 90vw;
+  }
+  .medios h2 { 
+    margin-left: 200px; 
+  }
+  .medios .flex-container {        
+    margin-left: 80px;    
   }
 }
 
@@ -1777,7 +2229,7 @@ footer .redes-sociales p {
 
   nav {
     position: relative;
-    height: 140px;
+    height: 160px;
     align-items: flex-end;  
     display: flex;  
   }
@@ -1796,9 +2248,15 @@ footer .redes-sociales p {
     margin-bottom: 5px;
     padding-right: 2px;
     padding-left: 2px;
-    margin-top: -10px;
-    margin-left: 100px;
-
+    margin-top: -20px;
+    margin-left: 35px;    
+  }  
+  nav ul li a {
+    color: rgb(110, 43, 243);
+    font-size: 15px;
+  }
+  nav ul li a:hover {
+    color: rgba(247, 192, 12, 0.979);
   }
   nav ul li .fa-home {
     display: none;
@@ -1831,7 +2289,7 @@ footer .redes-sociales p {
   /*Footer*/
 
   footer {
-    height: 110px;
+    height: 130px;
   }
   footer h4 {
     font-size: 15px;
@@ -1863,14 +2321,16 @@ footer .redes-sociales p {
 
   section .presentacion {     
     margin-right: 25px;    
-    margin-left: 25px;   
+    margin-left: 25px; 
+    height: 300px;  
   }
   section .presentacion img {    
     margin-left: 45px;
-    width: 40%;            
+    width: 40%;    
+    height: 250px;        
   }
   section .exposicion h3 {   
-    left: 180px;    
+    left: 120px;    
   }
   section .exposicion p {
     font-size: 18px;
@@ -1886,79 +2346,90 @@ footer .redes-sociales p {
     width: 40%;
     height: 280px;        
     top: -290px;
-    left: 510px;
+    left: 450px;
   }
   
   /* Medium devices (tablets, 768px and up) para contenido Pagina Nosotros*/
 
   .jumbotron {
-    height: 240vw;
+    height: 325vw;
   }
   .jumbotron .container {
-    width: 800px;
+    width: 700px;
     margin-left: -10px;
   }
   .jumbotron .container h1 {  
-    margin-left: 360px;      
+    margin-left: 270px;      
   }
   .jumbotron .container img {
-    margin-left: 100px;
+    margin-left: 80px;
+    height: 450px;
+    width: 600px;
   }
   .jumbotron .container p {
-    width: 850px;    
+    width: 690px;
+    margin-left: 30px;    
   }
   .jumbotron .container1 h2 {
-    margin-left: 340px;
+    margin-left: 270px;
   }
-  .jumbotron .container2 {
-    width: 100%;
-    margin: 1px;
+  .jumbotron .container2 {     
+    margin-left: 15px;
+    width: 95%;
   }
+  
   .jumbotron .row .col-md-4 h3 {
     font-size: 20px;
+    margin-left: 60px;
   }
   .jumbotron .row .col-md-4 p {
     font-size: 14px;
+    padding-left: 5px;
   }
   
   /* Medium devices (tablets, 768px and up) para contenido Pagina Productos*/
 
   .mercaderia { 
-    height: 240vw;       
+    height: 310vw;       
     flex-direction: column;
   }
   .mercaderia h2 {        
-    margin-left: 450px;
+    margin-left: 300px;
   }
   .mercaderia .medallones {
     width: 95%;
     height: 350px;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 20px;
+    padding-left: 20px;
   }
   .mercaderia .medallones ul {
     font-size: 15px;
     top: 90px;
+    left: 50px;
   }
   .mercaderia .medallones ul p {
     font-size: 18px;
   }
   .mercaderia .medallones img {  
-    left: 450px;
+    left: 370px;
     top: 50px;
+    width: 290px;
+    height: 250px;
   }    
   .mercaderia .pizza {
     width: 95%;
     height: 350px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 15px;        
-    font-size: 20px;        
+    margin-left: 10px;        
+    font-size: 20px;
+    padding-left: 20px;
   }
   .mercaderia .pizza ul {
-    left: 450px;     
+    left: 380px;     
     font-size: 15px;
   }
   .mercaderia .pizza ul p {
@@ -1967,37 +2438,44 @@ footer .redes-sociales p {
   .mercaderia .pizza img {
     top: 70px;
     left: 60px;
+    width: 290px;
+    height: 250px;
   }
   .mercaderia .canelones {
     width: 95%;
     height: 350px;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 20px;
+    padding-left: 10px;
   }
   .mercaderia .canelones ul {
     font-size: 15px;
     top: 90px;
-    left: 120px;
+    left: 50px;
   }
   .mercaderia .canelones ul p {
     font-size: 18px;
+    margin-left: 25px;
   }
   .mercaderia .canelones img {
-    left: 450px;
+    left: 370px;
     top: 50px;
+    width: 290px;
+    height: 250px;    
   }   
   .mercaderia .albondigas {
     width: 95%;
     height: 350px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 15px;        
+    margin-left: 10px;        
     font-size: 20px; 
+    padding-left: 20px;
   }
   .mercaderia .albondigas ul {
-    left: 480px;     
+    left: 380px;     
     font-size: 15px;
   }
   .mercaderia .albondigas ul p {
@@ -2006,53 +2484,61 @@ footer .redes-sociales p {
   .mercaderia .albondigas img {
     top: 70px;
     left: 60px;
+    width: 290px;
+    height: 250px;
   }
   .mercaderia .tartas {
     width: 95%;
     height: 350px;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 20px;
+    padding-left: 20px;
   }
   .mercaderia .tartas ul {
     font-size: 15px;
     top: 90px;
-    left: 70px;
+    left: 50px;
   }
   .mercaderia .tartas ul p {          
-    margin-left: 5px;
-    font-size: 18px;        
+    margin-left: -60px;
+    font-size: 17px;        
   }
   .mercaderia .tartas img {
-    left: 450px;
+    left: 375px;
     top: 50px;
+    width: 290px;
+    height: 250px;
   }
   .mercaderia .panqueques {
     width: 95%;
     height: 350px; 
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 15px;        
+    margin-left: 10px;        
     font-size: 20px; 
+    padding-left: 20px;
   }
   .mercaderia .panqueques ul {
-    left: 500px;     
+    left: 380px;     
     font-size: 18px;
   }
   .mercaderia .panqueques img {
     top: 70px;
     left: 60px;
+    width: 290px;
+    height: 250px;
   }
 
   /* Medium devices (tablets, 768px and up) para contenido Pagina Recetas*/
 
   .recetas {                      
-    height: 270vw;        
+    height: 320vw;        
   }
   .recetas h2 {     
-    grid-column: 3/7;
-    margin-left: 40px;
+    grid-column: 3/8;
+    margin-left: 30px;
   }
   .recetas p {
     font-size: 16px;        
@@ -2069,7 +2555,7 @@ footer .redes-sociales p {
     grid-column: 2/8;
     grid-row: 3/6;       
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     height: 320px; 
     margin-top: -100px;        
     padding-left: 110px;                        
@@ -2096,32 +2582,33 @@ footer .redes-sociales p {
     top: -250px;
   }
   .recetas .primera .indicaciones ol li {
-    font-size: 15px;        
+    font-size: 15px;
+    margin-left: -110px;        
   }
   .recetas .primera .indicaciones img {
     width: 75%;
-    top: 790px;
-    left: 30px;          
+    top: 780px;
+    left: -10px;          
   }
   .recetas .segunda {
     grid-column: 2/8;
     grid-row: 6/8; 
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     height: 320px; 
-    margin-left: 70px;        
+    margin-left: 60px;        
     padding-left: 110px;
     margin-top: 10px;  
   }
   .recetas .segunda h3 {
     font-size: 20px;
-    top: -40px;
-    left: 130px;
+    top: -50px;
+    left: 90px;    
   }
   .recetas .segunda .pizza {
     font-size: 15px;
     top: 2px;
-    padding-right: 30px;
+    padding-right: 30px;    
   }
   .recetas .segunda .pizza .encabezado {
     font-size: 15px;
@@ -2134,18 +2621,19 @@ footer .redes-sociales p {
     top: -235px;
   }
   .recetas .segunda .pasos ol li {
-    font-size: 15px;        
+    font-size: 15px;
+    margin-left: -110px;       
   }
   .recetas .segunda .pasos img {
     width: 85%;
     top: 750px;
-    left: 10px;
+    left: -10px;
   }
 
   /* Medium devices (tablets, 768px and up) para contenido Pagina Contacto*/
 
   .medios {    
-    height: 80vw;
+    height: 90vw;
   }
   .medios h2 {        
     grid-column: 3/6;
@@ -2164,7 +2652,7 @@ footer .redes-sociales p {
     padding: 20px;
   }
   .medios .flex-container .form .form-input {
-    width: 50%;
+    width: 70%;
     padding: 5px;
     margin: 5px 0;
   }
@@ -2176,37 +2664,162 @@ footer .redes-sociales p {
     margin-left: 95px; 
   }
 }
+/*Medium devices (tablets, 799px and up) */
+@media (min-width: 799px) and (max-width: 991.98px) {
+
+  /* Medium devices (tablets, 799px and up) para contenido Pagina nosotros*/
+  .jumbotron {
+    height: 310vw;
+  }
+  /* Medium devices (tablets, 799px and up) para contenido Pagina productos*/
+  .mercaderia { 
+    height: 290vw;
+  }  
+}
+
+/*Medium devices (tablets, 850px and up) */
+@media (min-width: 850px) and (max-width: 991.98px) {
+
+  /* Medium devices (tablets, 850px and up) para contenido Pagina nosotros*/
+  .jumbotron {
+    height: 280vw;
+  }
+  /* Medium devices (tablets, 850px and up) para contenido Pagina productos*/
+  .mercaderia { 
+    height: 275vw;     
+  }
+}
+
+/* Medium devices (tablets, 885px and up) para contenido Pagina inicio*/
+
+@media (min-width: 885px) and (max-width: 991.98px) {
+  /*Medium devices (tablets, 885px and up) para Header y Navegacion*/
+  nav ul {     
+    margin-left: 100px;    
+  } 
+
+  /*Medium devices (tablets, 885px and up) para Aside pagina Inicio*/
+
+  aside img {
+    left: 530px;
+  }
+  /*Medium devices (tablets, 885px and up) para contenido pagina Inicio*/
+  section .exposicion h3 {   
+    left: 170px; 
+  } 
+
+  /* Medium devices (tablets, 885px and up) para contenido Pagina nosotros*/
+  .jumbotron {
+    height: 265vw;
+  }
+  .jumbotron .container h1 {  
+    margin-left: 300px;      
+  }
+  .jumbotron .container img {
+    margin-left: 130px;
+    height: 450px;
+    width: 600px;
+  }
+  .jumbotron .container p {
+    width: 750px;
+    margin-left: 50px;    
+  }
+  /* Medium devices (tablets, 850px and up) para contenido Pagina productos*/
+  .mercaderia { 
+    height: 265vw;     
+  }
+  .mercaderia .medallones img {  
+    left: 450px;    
+  }
+  .mercaderia .canelones img {
+    left: 450px;  
+  }
+  .mercaderia .tartas img {
+    left: 450px;  
+  }
+  /* Medium devices (tablets, 850px and up) para contenido Pagina recetas*/
+  .recetas {                      
+    height: 300vw;        
+  }
+}
+
+/* Medium devices (tablets, 940px and up) para contenido Pagina nosotros*/
+@media (min-width: 940px) and (max-width: 991.98px) {
+  .jumbotron {
+    height: 245vw;
+  }
+  .jumbotron .container h1 {  
+    margin-left: 350px;      
+  }
+  .jumbotron .container img {
+    margin-left: 170px;   
+  }
+  .jumbotron .container p {
+    width: 760px;
+    margin-left: 80px;    
+  }
+  .jumbotron .container1 h2 {
+    margin-left: 350px;
+  }
+  .jumbotron .container2 {     
+    margin-left: 15px;
+    width: 95%;
+  }  
+  .jumbotron .row .col-md-4 h3 {
+    font-size: 20px;
+    margin-left: 80px;
+  }
+  .jumbotron .row .col-md-4 p {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+
+  /* Medium devices (tablets, 940px and up) para contenido Pagina productos*/
+  .mercaderia { 
+    height: 250vw;     
+  }
+  .mercaderia h2 {        
+    margin-left: 380px;
+  }
+  /* Medium devices (tablets, 940px and up) para contenido Pagina recetas*/
+  .recetas {                      
+    height: 280vw;        
+  }
+  /* Medium devices (tablets, 940px and up) para contenido Pagina contacto*/
+  .medios {    
+    height: 80vw;
+  }
+} 
 
 /* Large devices (desktops, 992px and up) para Header y Footer de todas las Paginas*/
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
   /*Header y nav*/
-
   nav {
-    position: relative;
-    height: 140px;
-    align-items: flex-end;  
-    display: flex;  
+    height: 180px;
   }
-  
   nav img {
     margin-left: 5px;
+    margin-top: 3px;
   }
   nav h1 {
     margin-left: 5px;
     margin-right: 1px;
     padding: 1px;    
+    margin-top: 2px;
+  }
+  nav h2 {
+    margin-top: 25px;
   }
   nav ul { 
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
     padding-right: 2px;
-    padding-left: 2px;
-    margin-top: -10px;
-    margin-left: 140px;
-
+    padding-left: 2px;    
+    margin-left: 140px; 
+    margin-top: -30px;   
   }
   nav ul li a {
     font-size: 17px;      
@@ -2263,7 +2876,7 @@ footer .redes-sociales p {
   /* Large devices (desktops, 992px and up) para contenido Pagina Nosotros*/
 
   .jumbotron{
-    height: 220vw;
+    height: 250vw;
   }
   .jumbotron .container h1 {
     margin-left: 380px;
@@ -2285,7 +2898,7 @@ footer .redes-sociales p {
   /* Large devices (desktops, 992px and up) para contenido Pagina Productos*/
 
   .mercaderia {    
-    height: 185vw;    
+    height: 210vw;    
   }
   .mercaderia h2 {
     margin-left: 450px; 
@@ -2319,7 +2932,7 @@ footer .redes-sociales p {
     font-size: 18px;
   }
   .mercaderia .pizza img {
-    left: 100px;
+    left: 70px;
     width: 300px;
     height: 260px;  
   }
@@ -2352,7 +2965,7 @@ footer .redes-sociales p {
     font-size: 18px;
   }
   .mercaderia .albondigas img {
-    left: 100px;
+    left: 70px;
     width: 300px;
     height: 260px;
   }
@@ -2363,10 +2976,12 @@ footer .redes-sociales p {
   }
   .mercaderia .tartas ul {
     font-size: 16px;
-    left: 100px;
+    left: 70px;
   }
   .mercaderia .tartas ul p {   
     font-size: 18px;
+    left: 10px;
+
   }
   .mercaderia .tartas img {
     width: 300px;  
@@ -2384,7 +2999,7 @@ footer .redes-sociales p {
     left: 600px;
   }    
   .mercaderia .panqueques img {
-    left: 100px;
+    left: 70px;
     width: 300px;
     height: 250px;
   }
@@ -2392,7 +3007,7 @@ footer .redes-sociales p {
   /* Large devices (desktops, 992px and up) para contenido Pagina Recetas*/
 
   .recetas {
-    height: 160vw;
+    height: 170vw;
   }
   .recetas h2 {
     grid-column: 3/7;
@@ -2405,11 +3020,12 @@ footer .redes-sociales p {
     width: 100%;    
     margin-left: 50px;
     margin-top: 90px;
+    height: 350px;
   }
   .recetas .primera h3 {
     top: -50px;
-    left: -35px;
-    font-size: 20px;
+    left: -5px;
+    font-size: 18px;
   }      
   .recetas .primera .estofado {
     font-size: 15px;
@@ -2420,10 +3036,11 @@ footer .redes-sociales p {
   }
   .recetas .primera .indicaciones ol {
     font-size: 15px;
+    top: 430px;
   }
   .recetas .primera .indicaciones img {
     bottom: 10px;
-    left: 40px; 
+    left: 60px; 
     top: 840px;
     width: 80%;
   }
@@ -2432,11 +3049,12 @@ footer .redes-sociales p {
     margin-left: 50px;
     margin-top: 90px;
     padding-left: 30px;
+    height: 350px;
   }
   .recetas .segunda h3 {
     top: -50px;
     left: 40px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .recetas .segunda .pizza {
     font-size: 15px;
@@ -2447,22 +3065,22 @@ footer .redes-sociales p {
   }
   .recetas .segunda .pasos ol {
     font-size: 15px;
-    top: 450px;
+    top: 430px;
   }
   .recetas .segunda .pasos img {
     bottom: 10px;
-    left: -10px; 
-    top: 850px;
+    left: 30px; 
+    top: 860px;
     width: 90%;
   } 
   
   /* Large devices (desktops, 992px and up) para contenido Pagina Contacto*/ 
   
   .medios {    
-    height: 65vw;
+    height: 75vw;
   }
   .medios h2 {
-    grid-column: 4/6;
+    grid-column: 4/6;    
   }
   .medios .flex-container {    
     margin-bottom: 5px;
@@ -2476,7 +3094,32 @@ footer .redes-sociales p {
   }
 }
 
+/* Large devices (desktops, 1000px and up) para Header y Footer de todas las Paginas*/
 
+@media (min-width: 1000px) and (max-width: 1199.98px) {
+
+  /* Large devices (desktops, 1000px and up) para contenido Pagina Productos*/
+  .mercaderia {    
+    height: 205vw;    
+  }
+}
+@media (min-width: 1036px) and (max-width: 1199.98px) {
+
+  /* Large devices (desktops, 1000px and up) para contenido Pagina Productos*/
+  .mercaderia {    
+    height: 200vw;    
+  }
+}
+@media (min-width: 1066px) and (max-width: 1199.98px) {
+
+  /* Large devices (desktops, 1000px and up) para contenido Pagina Productos*/
+  .mercaderia {    
+    height: 190vw;    
+  }
+}
+
+
+  
 
 
 
