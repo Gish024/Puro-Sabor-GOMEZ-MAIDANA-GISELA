@@ -11,7 +11,7 @@
     <meta name="robots" content="follow">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" href="http://www.yourwebsite.com/favicon.png">
     <link rel="icon" href="resources/logo.jpg">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -23,7 +23,10 @@
 <body>   
     <header>
         <nav class="navbar">
-            <img class="Logo" src="resources/logo.jpg" alt="alimentos">
+            <div class="Logo">
+                <a href="index.html"><img src="resources/logo.jpg" alt="alimentos"></a>
+                <a href="#" class ="boton-menu"><i class="fa-solid fa-bars"></i></a>
+            </div>            
             <h1 class="titulo">PURO SABOR</h1>
             <h2 class="subtitulo">Comida Saludable congelada</h2>
             <ul class="menu">
@@ -32,10 +35,7 @@
                 <li><i class="fa-solid fa-list-check"></i><a href="pages/productos.html">Nuestros Productos</a></li>
                 <li><i class="fa-brands fa-elementor"></i><a href="pages/recetas.html">Recetas rapidas y simples</a></li>
                 <li><i class="fa-solid fa-address-card"></i><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-bar">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            </ul>                  
             <div class="shop">
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
