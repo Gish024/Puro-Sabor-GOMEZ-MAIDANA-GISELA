@@ -985,8 +985,8 @@ footer .redes-sociales p {
   }
   nav .menu-bar {
     display: inline-block;        
-    margin-left: 20px;
-    margin-top: -25px;     
+    margin-left: 5px;
+    margin-top: -30px;     
   }
   .menu-bar li {
     text-decoration: none;
@@ -994,7 +994,8 @@ footer .redes-sociales p {
   }
   .menu-bar li a i {
     color: #000;
-    width: 2em;        
+    width: 2em;
+    font-size: 30px;        
   }
   .menu-bar .submenu {
     position: absolute;
@@ -1492,21 +1493,54 @@ footer .redes-sociales p {
     margin-top: 1px;
     font-size: 1em;
     margin-right: 1px;
-    margin-left: 10px;
+    margin-left: 110px;
+    margin-top: -40px;
   }
   nav .shop {
     display: none;
   }
-  
+  nav .menu {
+    display: none;
+  }
+  nav .menu-bar {
+    display: inline-block;        
+    margin-right: 90px;
+    margin-top: -75px;          
+  }
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 1em; 
+    font-size: 30px;      
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(170, 213, 238);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.2rem 0rem;
+    font-size: 16px;
+    color:rgb(34, 96, 219); 
+    text-decoration: none; 
 
-
-
-
-
-
-
-
-
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
+  }
 
   /* Extra small devices (portrait phones min-width: 360px and max-width: 374.98px) para Footer*/
 
@@ -1592,7 +1626,7 @@ footer .redes-sociales p {
 /*Extra small devices (portrait phones min-width: 360px and max-width: 374.98px) para contenido Pagina Nosotros*/
 
   .jumbotron {
-    height: 1300vw;
+    height: 1300vw;    
   }
   .jumbotron .container h1 {
     margin-left: 80px;
@@ -1644,7 +1678,7 @@ footer .redes-sociales p {
 
   .mercaderia { 
     height: 930vw;  
-    flex-direction: column;
+    flex-direction: column;   
   }
   .mercaderia h2 {    
     margin-left: 125px;
@@ -1797,7 +1831,7 @@ footer .redes-sociales p {
   /*Extra small devices (portrait phones min-width: 360px and max-width: 374.98px) para contenido Pagina Recetas*/
 
   .recetas {                      
-    height: 720vw;        
+    height: 720vw;          
   }
   .recetas h2 {        
     font-size: 20px;
@@ -1899,7 +1933,7 @@ footer .redes-sociales p {
   /*Extra small devices (portrait phones min-width: 360px and max-width: 374.98px) para contenido Pagina Contacto*/
 
   .medios {    
-    height: 195vw;
+    height: 195vw;    
   }
   .medios h2 {        
     grid-column: 1/8;
@@ -1957,26 +1991,55 @@ footer .redes-sociales p {
     padding: 1px;
   }
   nav h2 {
-    margin-top: 1px;
+    margin-top: -40px;
     font-size: 1em;
     margin-right: 1px;
-    margin-left: 10px;
+    margin-left: 130px;
   }
   nav .shop {
     display: none;
   }
-  nav .menu-bar {
-    display: block;        
-    font-size: 40px;
-    cursor: pointer;
-    margin-bottom: 25px;
-    margin-right: 30px;
-  }
-  nav ul {
+  nav .menu {
     display: none;
   }
-  nav img {
-    margin-bottom: 20px;
+  nav .menu-bar {
+    display: inline-block;        
+    margin-right: 90px;
+    margin-top: -75px;          
+  }
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 1em;
+    font-size: 35px;        
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(191, 217, 219);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.3rem 0rem;
+    font-size: 16px;
+    color:rgb(16, 91, 243); 
+    text-decoration: none; 
+
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
   }
 
   /*Extra small devices (portrait phones min-width: 375px and max-width: 399.98px) para Footer*/
@@ -2017,7 +2080,7 @@ footer .redes-sociales p {
                          "publicidad publicidad";                              
     grid-template-rows: 1fr 1fr 1fr; 
     grid-template-columns: 20% 20%;
-    height: 180vw; 
+    height: 180vw;     
   }
   section h2 {
     font-size: 20px;
@@ -2537,22 +2600,52 @@ footer .redes-sociales p {
     font-size: 0.9em;
     margin-right: 1px;
     margin-left: 20px;
+    margin-top: -30px;
   }
   nav .shop {
     display: none;
   }
-  nav .menu-bar {
-    display: block;        
-    font-size: 40px;
-    cursor: pointer;
-    margin-bottom: 25px;
-    margin-right: 30px;
-  }
-  nav ul {
+  nav .menu {
     display: none;
   }
-  nav img {
-    margin-bottom: 20px;
+  nav .menu-bar {
+    display: inline-block;        
+    margin-right: 90px;
+    margin-top: -25px;          
+  }
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 0.8em;
+    font-size: 40px;        
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(191, 217, 219);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.3rem 0rem;
+    font-size: 16px;
+    color:rgb(16, 91, 243); 
+    text-decoration: none; 
+
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
   }
 
   /*Extra small devices (portrait phones min-width: 400px and max-width: 449.98px) para Footer*/
@@ -2952,7 +3045,7 @@ footer .redes-sociales p {
   .medios h2 {        
     grid-column: 1/8;
     margin-left: 125px;
-    font-size: 15px; 
+    font-size: 18px; 
     margin-bottom: 20px;
   }
   .medios .flex-container {        
@@ -3003,26 +3096,54 @@ footer .redes-sociales p {
     padding: 1px;
   }
   nav h2 {
-    margin-top: 1px;
+    margin-top: 40px;
     font-size: 0.9em;
     margin-right: 1px;
-    margin-left: 10px;
+    margin-left: -10px;
   }
   nav .shop {
     display: none;
   }
-  nav .menu-bar {
-    display: block;        
-    font-size: 40px;
-    cursor: pointer;
-    margin-bottom: 25px;
-    margin-right: 30px;
-  }
-  nav ul {
+  nav .menu {
     display: none;
   }
-  nav img {
-    margin-bottom: 20px;
+  nav .menu-bar {
+    display: inline-block;        
+    margin-right: 90px;
+    margin-top: -25px;          
+  }
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 0.8em;
+    font-size: 40px;        
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(191, 217, 219);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.3rem 0rem;
+    font-size: 16px;
+    color:rgb(16, 91, 243); 
+    text-decoration: none; 
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
   }
   
   /*Extra small devices (portrait phones min-width: 450px and max-width: 575.98px) para Footer*/
@@ -3468,7 +3589,8 @@ footer .redes-sociales p {
     height: 700vw;
   }
   .mercaderia h2 {
-    margin-left: 190px;
+    margin-left: 200px;
+    font-size: 18px;
   }
   .mercaderia .medallones img{    
     margin-left: 50px;
@@ -3540,19 +3662,60 @@ footer .redes-sociales p {
   nav h1 {
     font-size: 1.5em;
     font-weight: 300;
-    margin-right: 5px;
+    margin-right: 2px;
     padding: 1px;
   }
   nav h2 {
     margin-top: 1px;
-    font-size: 1em;
-    margin-right: 1px;
-    margin-left: 5px;
-    margin-top: 50px;
+    font-size: 0.8em;
+    margin-right: 135px;
+    margin-left: -45px;
+    margin-top: 65px;
   }
-  nav .menu-bar {    
-    margin-top: -5px;
-    margin-right: 10px;
+  nav .shop {
+    display: none;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .menu-bar {
+    display: inline-block;        
+    margin-left: 390px;
+    margin-top: -115px;          
+  }
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 0.8em;
+    font-size: 40px;        
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(191, 217, 219);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.3rem 0rem;
+    font-size: 16px;
+    color:rgb(16, 91, 243); 
+    text-decoration: none; 
+
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
   }
   
   /*Extra small devices (portrait phones min-width: 540px and max-width: 575.98px) para contenido Pagina Inicio*/
@@ -3797,24 +3960,53 @@ footer .redes-sociales p {
   }
   nav h1 {
     font-size: 1.5em;
-  }
+  }  
   nav .shop {
     display: none;
   }
-  nav .menu-bar {
-    display: block;        
-    font-size: 40px;
-    cursor: pointer;
-    margin-bottom: 25px;
-    margin-right: 10px;
-  }
-  nav ul {
+  nav .menu {
     display: none;
   }
-  nav img {
-    margin-bottom: 20px;
+  nav .menu-bar {
+    display: inline-block;        
+    margin-left: 390px;
+    margin-top: -115px;          
   }
-  
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 0.8em;
+    font-size: 40px;        
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(191, 217, 219);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.3rem 0rem;
+    font-size: 16px;
+    color:rgb(16, 91, 243); 
+    text-decoration: none; 
+
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
+  }
+    
   /*Small devices (landscape phones, 576px and up) para Footer*/
 
   footer {
@@ -4219,7 +4411,97 @@ footer .redes-sociales p {
 
 @media (min-width: 600px) and (max-width: 767.98px) {
 
-/*Small devices (landscape phones, 600px and up) para contenido Pagina Nosotros*/
+  /*Small devices (landscape phones, 600px and up) para Header y Nav */
+
+  nav {
+    position: relative;
+    height: 150px;
+  }
+  nav img {
+    margin-left: 5px;
+  }
+  nav h1 {
+    font-size: 1.5em;
+  }
+  nav h2 {
+    margin-top: 70px;
+    margin-left: -10px;
+    margin-right: 170px;
+  }  
+  nav .shop {
+    display: none;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .menu-bar {
+    display: inline-block;        
+    margin-left: 460px;
+    margin-top: -115px;          
+  }
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 0.8em;
+    font-size: 40px;        
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(191, 217, 219);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.3rem 0rem;
+    font-size: 16px;
+    color:rgb(16, 91, 243); 
+    text-decoration: none; 
+
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
+  }
+
+  /*Small devices (landscape phones, 600px and up) para Footer */
+  footer {
+    height: 120px;
+  }
+  footer h4 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  footer h5 {
+    display: none;
+  }
+  footer .redes-sociales{
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-left: 20px;
+  }
+  footer .redes-sociales img{
+    margin-top: 10px;               
+  }
+  footer .redes-sociales a {
+    display: none;
+  }
+  footer .redes-sociales p {        
+    display: none;
+  }
+
+  /*Small devices (landscape phones, 600px and up) para contenido Pagina Nosotros*/
 
   .jumbotron {
     height: 660vw;
@@ -4235,6 +4517,101 @@ footer .redes-sociales p {
 /*Small devices (landscape phones, 650px and up)*/
 
 @media (min-width: 650px) and (max-width: 767.98px) {
+
+  /*Small devices (landscape phones, 650px and up) para Header y Nav */
+
+  nav {
+    position: relative;
+    height: 150px;
+  }
+  nav img {
+    margin-left: 5px;
+  }
+  nav h1 {
+    font-size: 1.5em;
+  }
+  nav h2 {
+    margin-top: 70px;
+    margin-left: -10px;
+    margin-right: 170px;
+  }  
+  nav .shop {
+    display: none;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .menu-bar {
+    display: inline-block;        
+    margin-left: 460px;
+    margin-top: -115px;          
+  }
+  .menu-bar li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu-bar li a i {
+    color: #000;
+    width: 0.8em;
+    font-size: 40px;        
+  }
+  .menu-bar .submenu {
+    position: absolute;
+    background: rgb(191, 217, 219);
+    text-decoration: none; 
+    width: 220%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 1.5s;
+    border: 1px solid rgb(7, 119, 247);
+  }  
+  .submenu li a {
+    display: block;
+    padding: 0.3rem 0rem;
+    font-size: 16px;
+    color:rgb(16, 91, 243); 
+    text-decoration: none; 
+
+  }
+  .submenu li a:hover {
+    color: rgb(11, 172, 247);
+  }
+  .menu-bar li:hover .submenu {
+    visibility: visible;
+    opacity: 10;
+  }
+
+  /*Small devices (landscape phones, 650px and up) para Footer */
+  footer {
+    height: 120px;
+  }
+  footer h4 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  footer h5 {
+    display: none;
+  }
+  footer .redes-sociales{
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-left: 20px;
+  }
+  footer .redes-sociales img{
+    margin-top: 12px; 
+    margin-right: -20px;            
+  }
+  footer .redes-sociales a {
+    margin-top: 12px;
+    margin-left: -20px;        
+    font-size: 12px;
+  }
+  footer .redes-sociales p {        
+    font-size: 12px;
+    margin-top: 12px;
+    margin-left: -20px;
+  }    
 
   /*Small devices (landscape phones, 650px and up) para contenido Pagina Inicio*/
 
@@ -4411,43 +4788,39 @@ footer .redes-sociales p {
   nav h2 {
     margin-right: 10px;
   }
-  nav ul { 
+  nav .menu { 
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
-    padding-right: 2px;
-    padding-left: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-top: -20px;
-    margin-left: 55px;    
+    margin-left: 100px;    
   }  
-  nav ul li a {
-    color: rgb(110, 43, 243);
-    font-size: 15px;
-  }
-  nav ul li a:hover {
+  nav .menu li a:hover {
     color: rgba(247, 192, 12, 0.979);
   }
-  nav ul li .fa-home {
+  nav .menu li .fa-home {
     display: none;
   }
-  nav ul li .fa-user-friends {
+  nav .menu li .fa-user-friends {
     display: none;
   }
-  nav ul li .fa-list-check {
+  nav .menu li .fa-list-check {
     display: none;
   }
-  nav ul li .fa-elementor {
+  nav .menu li .fa-elementor {
     display: none;
   }
-  nav ul li .fa-address-card {
+  nav .menu li .fa-address-card {
     display: none;
   }
-  nav ul li a {
-    font-size: 17px;      
-  }
-  nav ul li a:hover {
-    font-size: 18px;
-  } 
+  nav .menu li a {
+    font-size: 17px;
+    color: rgb(42, 62, 243);
+    padding-right: 20px;
+    padding-left: 20px;      
+  }  
   nav .menu-bar {
     display: none
   }
@@ -4470,20 +4843,22 @@ footer .redes-sociales p {
   footer .redes-sociales {
     flex-direction: row; 
     flex-wrap: wrap; 
-    justify-content: space-around; 
-    margin-left: 20px;    
+    justify-content: space-around;       
   }    
   footer .redes-sociales img{
-    margin-top: 18px;             
+    margin-top: 18px;
+    margin-right: -20px; 
+    width: 20px;            
   }
   footer .redes-sociales a {
     margin-top: 18px;
-    margin-left: 2px;        
+    margin-left: -25px;        
     font-size: 14px;
   }
   footer .redes-sociales p {        
     font-size: 14px;
     margin-top: 18px;
+    margin-left: -25px;
   } 
   
   /* Medium devices (tablets 768px and up) para contenido Pagina Inicio*/
@@ -4838,9 +5213,9 @@ footer .redes-sociales p {
 
 /* Medium devices (tablets, 820px and up)*/
 
-@media (min-width: 820px) and (max-width: 849.98px) {
+@media (min-width: 820px) and (max-width: 911.98px) {
 
-  /* Medium devices (tablets min-width: 820px and max-width: 849.98px) para Header y nav*/
+  /* Medium devices (tablets min-width: 820px and max-width: 911.98px) para Header y nav*/
 
   nav {
     position: relative;
@@ -4860,41 +5235,43 @@ footer .redes-sociales p {
   nav h2 {
     margin-right: 10px;
   }
-  nav ul { 
+  nav .menu { 
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
     padding-right: 2px;
     padding-left: 2px;
     margin-top: -20px;
-    margin-left: 75px;    
+    margin-left: 135px;    
   }  
-  nav ul li a {
+  nav .menu li a {
     color: rgb(110, 43, 243);
-    font-size: 15px;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  nav ul li a:hover {
+  nav .menu li a:hover {
     color: rgba(247, 192, 12, 0.979);
   }
-  nav ul li .fa-home {
+  nav .menu li .fa-home {
     display: none;
   }
-  nav ul li .fa-user-friends {
+  nav .menu li .fa-user-friends {
     display: none;
   }
-  nav ul li .fa-list-check {
+  nav .menu li .fa-list-check {
     display: none;
   }
-  nav ul li .fa-elementor {
+  nav .menu li .fa-elementor {
     display: none;
   }
-  nav ul li .fa-address-card {
+  nav .menu li .fa-address-card {
     display: none;
   }
-  nav ul li a {
+  nav .menu li a {
     font-size: 17px;      
   }
-  nav ul li a:hover {
+  nav .menu li a:hover {
     font-size: 18px;
   } 
   nav .menu-bar {
@@ -4904,7 +5281,7 @@ footer .redes-sociales p {
     display: none;
   }
   
-  /*Medium devices (tablets min-width: 820px and max-width: 849.98px) para Footer*/
+  /*Medium devices (tablets min-width: 820px and max-width: 911.98px) para Footer*/
 
   footer {
     height: 130px;
@@ -4919,23 +5296,25 @@ footer .redes-sociales p {
   footer .redes-sociales {
     flex-direction: row; 
     flex-wrap: wrap; 
-    justify-content: space-around; 
-    margin-left: 20px;    
+    justify-content: space-around;       
   }    
   footer .redes-sociales img{
-    margin-top: 18px;             
+    margin-top: 18px;
+    margin-right: -20px; 
+    width: 20px;            
   }
   footer .redes-sociales a {
     margin-top: 18px;
-    margin-left: 2px;        
+    margin-left: -25px;        
     font-size: 14px;
   }
   footer .redes-sociales p {        
     font-size: 14px;
     margin-top: 18px;
+    margin-left: -25px;
   } 
   
-  /* Medium devices (tablets min-width: 820px and max-width: 849.98px) para contenido Pagina Inicio*/
+  /* Medium devices (tablets min-width: 820px and max-width: 911.98px) para contenido Pagina Inicio*/
 
   section .presentacion {     
     margin-right: 25px;    
@@ -4967,7 +5346,7 @@ footer .redes-sociales p {
     left: 450px;
   }
 
-  /* Medium devices (tablets min-width: 820px and max-width: 849.98px) para contenido Pagina Nosotros*/
+  /* Medium devices (tablets min-width: 820px and max-width: 911.98px) para contenido Pagina Nosotros*/
 
   .jumbotron {
     height: 325vw;
@@ -5004,7 +5383,7 @@ footer .redes-sociales p {
     padding: 10px;
   }
 
-  /* Medium devices (tablets min-width: 820px and max-width: 849.98px) para contenido Pagina Productos*/
+  /* Medium devices (tablets min-width: 820px and max-width: 911.98px) para contenido Pagina Productos*/
 
   .mercaderia { 
     height: 285vw;       
@@ -5148,7 +5527,7 @@ footer .redes-sociales p {
     height: 250px;
   }
 
-  /* Medium devices (tablets min-width: 820px and max-width: 849.98px) para contenido Pagina Recetas*/
+  /* Medium devices (tablets min-width: 820px and max-width: 911.98px) para contenido Pagina Recetas*/
 
   .recetas {                      
     height: 300vw;        
@@ -5248,7 +5627,7 @@ footer .redes-sociales p {
     left: -30px;
   }
 
-  /* Medium devices (tablets min-width: 820px and max-width: 849.98px) para contenido Pagina Contacto*/
+  /* Medium devices (tablets min-width: 820px and max-width: 911.98px) para contenido Pagina Contacto*/
 
   .medios {    
     height: 90vw; 
@@ -5364,9 +5743,9 @@ footer .redes-sociales p {
 
 /* Medium devices (tablets 912px and up)*/
 
-@media (min-width: 912px) and (max-width: 939.98px) {
+@media (min-width: 912px) and (max-width: 991.98px) {
 
-  /* Medium devices (tablets min-width: 912px and max-width: 939.98px) para Header y nav*/
+  /* Medium devices (tablets min-width: 912px and max-width: 991.98px) para Header y nav*/
 
   nav {
     position: relative;
@@ -5386,7 +5765,7 @@ footer .redes-sociales p {
   nav h2 {
     margin-right: 10px;
   }
-  nav ul { 
+  nav .menu { 
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
@@ -5395,32 +5774,32 @@ footer .redes-sociales p {
     margin-top: -25px;
     margin-left: 105px;    
   }  
-  nav ul li a {
+  nav .menu li a {
     color: rgb(110, 43, 243);
     font-size: 15px;
   }
-  nav ul li a:hover {
+  nav .menu li a:hover {
     color: rgba(247, 192, 12, 0.979);
   }
-  nav ul li .fa-home {
+  nav .menu li .fa-home {
     display: none;
   }
-  nav ul li .fa-user-friends {
+  nav .menu li .fa-user-friends {
     display: none;
   }
-  nav ul li .fa-list-check {
+  nav .menu li .fa-list-check {
     display: none;
   }
-  nav ul li .fa-elementor {
+  nav .menu li .fa-elementor {
     display: none;
   }
-  nav ul li .fa-address-card {
+  nav .menu li .fa-address-card {
     display: none;
   }
-  nav ul li a {
+  nav .menu li a {
     font-size: 17px;      
   }
-  nav ul li a:hover {
+  nav .menu li a:hover {
     font-size: 18px;
   } 
   nav .menu-bar {
@@ -5430,7 +5809,7 @@ footer .redes-sociales p {
     display: none;
   }
   
-  /*Medium devices (tablets min-width: 912px and max-width: 939.98px) para Footer*/
+  /*Medium devices (tablets min-width: 912px and max-width: 991.98px) para Footer*/
 
   footer {
     height: 110px;
@@ -5445,23 +5824,25 @@ footer .redes-sociales p {
   footer .redes-sociales {
     flex-direction: row; 
     flex-wrap: wrap; 
-    justify-content: space-around; 
-    margin-left: 20px;    
+    justify-content: space-around;       
   }    
   footer .redes-sociales img{
-    margin-top: 18px;             
+    margin-top: 18px;
+    margin-right: -20px; 
+    width: 20px;            
   }
   footer .redes-sociales a {
     margin-top: 18px;
-    margin-left: 2px;        
+    margin-left: -25px;        
     font-size: 14px;
   }
   footer .redes-sociales p {        
     font-size: 14px;
     margin-top: 18px;
+    margin-left: -25px;
   } 
   
-  /* Medium devices (tablets min-width: 912px and max-width: 939.98px) para contenido Pagina Inicio*/
+  /* Medium devices (tablets min-width: 912px and max-width: 991.98px) para contenido Pagina Inicio*/
 
   section .presentacion {     
     margin-right: 25px;    
@@ -5494,7 +5875,7 @@ footer .redes-sociales p {
     left: 510px;
   }
 
-  /* Medium devices (tablets min-width: 912px and max-width: 939.98px) para contenido Pagina Nosotros*/
+  /* Medium devices (tablets min-width: 912px and max-width: 991.98px) para contenido Pagina Nosotros*/
 
   .jumbotron {
     height: 277vw;
@@ -5531,7 +5912,7 @@ footer .redes-sociales p {
     padding: 10px;
   }
 
-  /* Medium devices (tablets min-width: 912px and max-width: 939.98px) para contenido Pagina Productos*/
+  /* Medium devices (tablets min-width: 912px and max-width: 991.98px) para contenido Pagina Productos*/
 
   .mercaderia { 
     height: 260vw;       
@@ -5675,7 +6056,7 @@ footer .redes-sociales p {
     height: 250px;
   }
 
-  /* Medium devices (tablets min-width: 912px and max-width: 939.98px) para contenido Pagina Recetas*/
+  /* Medium devices (tablets min-width: 912px and max-width: 991.98px) para contenido Pagina Recetas*/
 
   .recetas {
     height: 180vw;
@@ -5751,7 +6132,7 @@ footer .redes-sociales p {
     width: 90%;
   } 
 
-  /* Medium devices (tablets min-width: 912px and max-width: 939.98px) para contenido Pagina Contacto*/
+  /* Medium devices (tablets min-width: 912px and max-width: 991.98px) para contenido Pagina Contacto*/
   
   .medios {    
     height: 90vw; 
@@ -5865,7 +6246,7 @@ footer .redes-sociales p {
     margin-top: 25px;
     margin-right: 15px;
   }
-  nav ul { 
+  nav .menu { 
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
@@ -5874,10 +6255,10 @@ footer .redes-sociales p {
     margin-left: 140px; 
     margin-top: -30px;   
   }
-  nav ul li a {
+  nav .menu li a {
     font-size: 17px;      
   }
-  nav ul li a:hover {
+  nav .menu li a:hover {
     font-size: 18px;
   } 
   nav .menu-bar {
@@ -5890,7 +6271,7 @@ footer .redes-sociales p {
   /* Large devices (desktops, 992px and up) para Footer*/
 
   footer {
-    height: 100px;
+    height: 105px;
   }
   footer h4 {
     font-family: "Lora", serif;
@@ -5899,6 +6280,27 @@ footer .redes-sociales p {
   footer h5 {    
     font-size: 15px;
   }
+  footer .redes-sociales {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around;       
+  }    
+  footer .redes-sociales img{
+    margin-top: 10px;
+    margin-right: -20px;     
+    width: 25px;  
+    margin-bottom: 5px;          
+  }
+  footer .redes-sociales a {
+    margin-top: 12px;
+    margin-left: -20px;        
+    font-size: 14px;
+  }
+  footer .redes-sociales p {        
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: -20px;
+  } 
 
   /* Large devices (desktops, 992px and up) para contenido Pagina Inicio*/
 
@@ -6281,6 +6683,27 @@ footer .redes-sociales p {
   footer h5 {    
     font-size: 15px;
   }
+  footer .redes-sociales {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around;       
+  }    
+  footer .redes-sociales img{
+    margin-top: 8px;
+    margin-right: -65px;    
+    width: 25px;
+    margin-bottom: 5px;            
+  }
+  footer .redes-sociales a {
+    margin-top: 7px;
+    margin-left: -65px;        
+    font-size: 14px;
+  }
+  footer .redes-sociales p {        
+    font-size: 14px;
+    margin-top: 7px;
+    margin-left: -65px;
+  } 
 
 /* Large devices (desktops 1200px and up) para contenido Pagina Inicio*/
 
