@@ -1012,7 +1012,7 @@ footer .redes-sociales p {
   }
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(70, 72, 75); 
     text-decoration: none; 
@@ -1490,7 +1490,6 @@ footer .redes-sociales p {
     padding: 1px;
   }
   nav h2 {
-    margin-top: 1px;
     font-size: 1em;
     margin-right: 1px;
     margin-left: 110px;
@@ -1528,7 +1527,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.2rem 0rem;
+    padding: 0.2rem 0;
     font-size: 16px;
     color:rgb(34, 96, 219); 
     text-decoration: none; 
@@ -2028,7 +2027,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(16, 91, 243); 
     text-decoration: none; 
@@ -2595,8 +2594,7 @@ footer .redes-sociales p {
     margin-right: 50px;
     padding: 1px;
   }
-  nav h2 {
-    margin-top: 1px;
+  nav h2 {    
     font-size: 0.9em;
     margin-right: 1px;
     margin-left: 20px;
@@ -2634,7 +2632,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(16, 91, 243); 
     text-decoration: none; 
@@ -3133,7 +3131,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(16, 91, 243); 
     text-decoration: none; 
@@ -3666,7 +3664,6 @@ footer .redes-sociales p {
     padding: 1px;
   }
   nav h2 {
-    margin-top: 1px;
     font-size: 0.8em;
     margin-right: 135px;
     margin-left: -45px;
@@ -3704,7 +3701,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(16, 91, 243); 
     text-decoration: none; 
@@ -3993,7 +3990,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(16, 91, 243); 
     text-decoration: none; 
@@ -4460,7 +4457,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(16, 91, 243); 
     text-decoration: none; 
@@ -4567,7 +4564,7 @@ footer .redes-sociales p {
   }  
   .submenu li a {
     display: block;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0;
     font-size: 16px;
     color:rgb(16, 91, 243); 
     text-decoration: none; 
