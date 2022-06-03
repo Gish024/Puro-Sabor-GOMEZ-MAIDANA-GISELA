@@ -418,7 +418,7 @@ footer .redes-sociales p {
   position: absolute;
   box-shadow: 10px 10px 20px 0 rgb(70, 70, 69), 10px 10px 20px 0 rgb(70, 70, 69);
   top: 20px;
-  left: 650px;
+  left: 680px;
 }
 .mercaderia .pizza {
   grid-area: pizza;
@@ -500,7 +500,7 @@ footer .redes-sociales p {
   position: absolute;
   box-shadow: 10px 10px 20px 0 rgb(70, 70, 69), 10px 10px 20px 0 rgb(70, 70, 69);
   top: 20px;
-  left: 650px;
+  left: 680px;
 }
 .mercaderia .albondigas {
   grid-area: albondigas;
@@ -582,7 +582,7 @@ footer .redes-sociales p {
   position: absolute;
   box-shadow: 10px 10px 20px 0 rgb(70, 70, 69), 10px 10px 20px 0 rgb(70, 70, 69);
   top: 20px;
-  left: 650px;
+  left: 680px;
 }
 .mercaderia .panqueques {
   grid-area: panqueques;
@@ -1492,8 +1492,8 @@ footer .redes-sociales p {
   nav h2 {
     font-size: 1em;
     margin-right: 1px;
-    margin-left: 110px;
-    margin-top: -40px;
+    margin-left: 130px;
+    margin-top: -50px;
   }
   nav .shop {
     display: none;
@@ -1503,7 +1503,7 @@ footer .redes-sociales p {
   }
   nav .menu-bar {
     display: inline-block;        
-    margin-right: 90px;
+    margin-right: 70px;
     margin-top: -75px;          
   }
   .menu-bar li {
@@ -1833,9 +1833,9 @@ footer .redes-sociales p {
     height: 720vw;          
   }
   .recetas h2 {        
-    font-size: 20px;
+    font-size: 18px;
     grid-column: 1/8;
-    margin-left: 25px;
+    margin-left: 45px;
   }
   .recetas p {
     font-size: 15px;
@@ -1936,7 +1936,7 @@ footer .redes-sociales p {
   }
   .medios h2 {        
     grid-column: 1/8;
-    margin-left: 105px;
+    margin-left: 95px;
     font-size: 20px; 
     margin-bottom: 20px;
   }
@@ -4670,6 +4670,19 @@ footer .redes-sociales p {
 
 @media (min-width: 700px) and (max-width: 767.98px) {
 
+  /*Small devices (landscape phones, 700px and up) para Nav*/
+
+  nav h2 {
+    margin-top: 70px;
+    margin-left: -10px;
+    margin-right: 250px;
+  }  
+  nav .menu-bar {
+    display: inline-block;        
+    margin-left: 520px;
+    margin-top: -115px;          
+  }
+
   /*Small devices (landscape phones, 700px and up) para contenido Pagina Nosotros*/
 
   .jumbotron {
@@ -4702,6 +4715,129 @@ footer .redes-sociales p {
 
   .mercaderia { 
     height: 480vw; 
+  }
+  .mercaderia h2 {    
+    margin-left: 270px;
+  }  
+  .mercaderia .medallones img {
+    left: 135px;
+  }
+  .mercaderia .pizza img {    
+    left: 135px;
+  }
+  .mercaderia .canelones img {    
+    left: 135px;
+  }
+  .mercaderia .albondigas img {
+    left: 135px;
+  }
+  .mercaderia .tartas img {
+    left: 135px;
+  }
+  .mercaderia .panqueques img {
+    left: 135px;
+  }
+
+  /*Small devices (landscape phones, 700px and up) para contenido Pagina Recetas*/
+  .recetas {                      
+    height: 360vw;        
+  }
+  .recetas h2 {        
+    font-size: 20px;
+    grid-column: 1/8;
+    margin-left: 220px;
+    margin-top: 25px;
+  }
+  .recetas p {
+    font-size: 15px; 
+    margin-top: 115px;       
+  }
+  .recetas video { 
+    grid-column: 2/7;
+    grid-row: 2;  
+    height: 270px;
+    margin-left: 45px;
+    margin-top: -140px;
+  }
+  .recetas .primera {
+    grid-column: 1/8;
+    grid-row: 3/5;       
+    flex-direction: column;
+    width: 90%;
+    height: 290px; 
+    margin-left: 80px;
+    padding-left: 20px;
+    margin-top: -80px;                        
+  }
+  .recetas .primera h3 {
+    font-size: 18px;
+    top: -70px;
+    left: 120px;
+  }
+  .recetas .primera .estofado {
+    font-size: 15px;
+    top: 2px;
+    padding-right: 40px;
+    left: 130px;
+  }
+  .recetas .primera .estofado .titular {
+    font-size: 15px;
+  }
+  .recetas .primera h4 {
+    font-size: 17px;
+    top: 320px;    
+  }  
+  .recetas .primera .indicaciones {
+    margin-top: -465px;
+  }
+  .recetas .primera .indicaciones ol li {
+    font-size: 15px; 
+    margin-left: -50px;       
+  }
+  .recetas .primera .indicaciones img {
+    width: 65%;
+    top: 750px; 
+    left: 70px;       
+  }
+  .recetas .segunda {
+    grid-column: 1/8;
+    grid-row: 6/8; 
+    flex-direction: column;
+    width: 90%;
+    height: 290px; 
+    margin-left: 80px;
+    padding-left: 20px;
+    margin-top: 10px;  
+  }
+  .recetas .segunda h3 {
+    font-size: 18px;
+    top: -40px;
+    left: 140px;
+  }
+  .recetas .segunda .pizza {
+    font-size: 15px;
+    top: 15px;
+    padding-right: 30px;
+    left: 120px;
+  }
+  .recetas .segunda .pizza .encabezado {    
+    font-size: 15px;
+  }
+  .recetas .segunda h4 {
+    font-size: 17px;
+    top: 310px;
+  }
+  .recetas .segunda .pasos {
+    top: -255px;
+  }
+  .recetas .segunda .pasos ol {
+    font-size: 15px; 
+    margin-left: -50px;       
+  }
+  .recetas .segunda .pasos img {
+    width: 75%;
+    top: 770px;
+    left: 50px;
   }
 }
 
@@ -5766,14 +5902,16 @@ footer .redes-sociales p {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
-    padding-right: 2px;
-    padding-left: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-top: -25px;
-    margin-left: 105px;    
+    margin-left: 180px;    
   }  
   nav .menu li a {
     color: rgb(110, 43, 243);
     font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   nav .menu li a:hover {
     color: rgba(247, 192, 12, 0.979);
@@ -6549,6 +6687,20 @@ footer .redes-sociales p {
 /* Large devices (desktops, 1000px and up)*/
 
 @media (min-width: 1000px) and (max-width: 1199.98px) {
+
+  /* Large devices (desktops, 1000px and up) para Nav*/
+
+  nav .menu {
+    padding-right: 20px;
+    padding-left: 20px;    
+    margin-left: 170px; 
+    margin-top: -30px;   
+  }
+  nav .menu li a {
+    font-size: 17px;
+    padding-right: 40px;
+    padding-left: 5px;     
+  }
 
   /* Large devices (desktops, 1000px and up) para contenido Pagina Nosotros*/ 
 
